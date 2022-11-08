@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyLvl2 : MonoBehaviour
+public class EnemyLvl1 : MonoBehaviour
 {
     public Transform enemigo;
     public Transform[] puntosDeControl;

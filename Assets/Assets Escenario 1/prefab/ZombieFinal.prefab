@@ -1989,7 +1989,7 @@ GameObject:
   - component: {fileID: 7467025708243641110}
   - component: {fileID: 7467025708243641104}
   - component: {fileID: 7467025708243641105}
-  - component: {fileID: 7467025708243641108}
+  - component: {fileID: -386093549499167754}
   m_Layer: 0
   m_Name: ZombieFinal
   m_TagString: Untagged
@@ -2095,7 +2095,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &7467025708243641108
+--- !u!114 &-386093549499167754
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2104,10 +2104,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6484519193168877360}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9310d0c2ace0c549b7bc79f815bfe26, type: 3}
+  m_Script: {fileID: 11500000, guid: ccb1754bba00f6244834b78ea384de9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemigo: {fileID: 8045392668284314915}
+  enemigo: {fileID: 0}
   puntosDeControl: []
 --- !u!1 &6594629050745425825
 GameObject:
