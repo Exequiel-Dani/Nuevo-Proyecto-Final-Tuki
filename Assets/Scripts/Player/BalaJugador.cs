@@ -12,9 +12,13 @@ public class BalaJugador : MonoBehaviour
         if (other.tag == "Enemigo")
         {
             other.GetComponent<VidaEnemigo>().RestarVidaEnemigo(cantidad);
-            Destroy(gameObject);        
-
-            
+            Destroy(gameObject); 
+      
+        }
+        if (other.tag == "Enemigo")
+        {
+            other.GetComponent<VidaEnemigoZ>().RestarVidaEnemigo(cantidad);
+            Destroy(gameObject); 
         }
         
     }

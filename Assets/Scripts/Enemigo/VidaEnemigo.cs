@@ -8,6 +8,8 @@ public class VidaEnemigo : MonoBehaviour
     public int vidaEnemigo = 100;
     public Slider vidaVisualEnemy;
 
+    [SerializeField] Animator animator;
+
     public void RestarVidaEnemigo (int cantidad)
     {
         vidaEnemigo -= cantidad;
@@ -22,5 +24,6 @@ public class VidaEnemigo : MonoBehaviour
             Debug.Log("EnemigoDestruido");
             Destroy(gameObject);
         }
+       
     }
 }
