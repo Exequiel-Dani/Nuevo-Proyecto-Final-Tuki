@@ -10,8 +10,10 @@ TagManager:
   - Obstaculo
   - Llave
   - Premio
-  - PuntosDePatrullaje
   - Zombi
+  - Ruta2
+  - Ruta1
+  - Ruta3
   layers:
   - Default
   - TransparentFX

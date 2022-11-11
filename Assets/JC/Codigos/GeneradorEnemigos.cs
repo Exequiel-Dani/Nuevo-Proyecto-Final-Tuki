@@ -33,10 +33,7 @@ public class GeneradorEnemigos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		
-		
 		InvokeRepeating("GenerarEnemigo", iniciarTiempo, repetirTiempo);
-	
 	}
 	
 		
@@ -45,15 +42,11 @@ public class GeneradorEnemigos : MonoBehaviour
 	{
 		if(contador<maximoEnemigos)
 		{
-			
-				
 					Instantiate(enemigo01, transform.position,transform.rotation);
-						
 						for(int i=0;i<=lineasTotales;i++)
 						{
 							if(enemigosXLinea==maximoEnemigosXLinea*i)
 							{
-								
 								if(lineas<cantidadHaciaFrente&&lineas<=lineasTotales)
 								{
 									transform.Translate(0f,0f,distanciaEnemigos);
@@ -63,18 +56,10 @@ public class GeneradorEnemigos : MonoBehaviour
 									transform.Translate(0f,0f,distanciaEnemigos*(-1));
 									lineas++;
 								}
-
-								
-
-								
 							}
-							
 						}
-					enemigosXLinea++;
-					contador++;
-
+		enemigosXLinea++;
+		contador++;
 		}
-				
 	}
-
 }

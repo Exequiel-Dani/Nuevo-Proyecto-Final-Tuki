@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AtaqueZ : MonoBehaviour
 {
-    public int cantidad = 10;
+    [SerializeField] private int cantidad = 10;
 
     private void OnTriggerEnter(Collider other)
     {

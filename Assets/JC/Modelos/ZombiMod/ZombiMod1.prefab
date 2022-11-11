@@ -3872,6 +3872,7 @@ GameObject:
   - component: {fileID: 1941674987739638128}
   - component: {fileID: 2900816227844868942}
   - component: {fileID: 7769798241169899316}
+  - component: {fileID: -1289972293497638813}
   m_Layer: 0
   m_Name: ZombiMod1
   m_TagString: Enemigo
@@ -3965,7 +3966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c1c466ac82db844d9aa40f59a80fb0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cantidad: 20
+  cantidad: 30
 --- !u!114 &1941674987739638128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3978,6 +3979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f5f2ce229a9116469c056e9a28691c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vidaEnemigo: 100
   animator: {fileID: 4231496872585478830}
   cantidad: 30
   barraVitalidad: {fileID: 7769798241160667359}
@@ -3988,7 +3990,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7427200514819867246}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23d12b2c8e7dd6842bd3d4df4a630ef9, type: 3}
   m_Name: 
@@ -4008,6 +4010,19 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.61, y: 1.19, z: 0.97}
+  m_Center: {x: 0, y: 0.68, z: 0}
+--- !u!65 &-1289972293497638813
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7427200514819867246}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.19, z: 1}
   m_Center: {x: 0, y: 0.68, z: 0}
 --- !u!1 &7490106416807849923
 GameObject:
