@@ -494,6 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42e70a51f7e0a504b9e5a96429257738, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ruta: Ruta2
   temporizador: 0
   rangoPerseguir: 8
   jugador: {fileID: 0}

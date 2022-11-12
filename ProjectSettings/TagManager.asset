@@ -14,6 +14,9 @@ TagManager:
   - Ruta2
   - Ruta1
   - Ruta3
+  - PuntosDePatrullaje
+  - audio
+  - luz
   layers:
   - Default
   - TransparentFX

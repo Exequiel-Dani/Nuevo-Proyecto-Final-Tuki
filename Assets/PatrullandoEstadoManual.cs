@@ -6,7 +6,7 @@ public class PatrullandoEstadoManual : StateMachineBehaviour
 {
 
     /* variables */
-    [SerializeField] private string ruta = "ruta2";
+    [SerializeField] private string ruta = "Ruta2";
 
     [SerializeField]
     private float temporizador;

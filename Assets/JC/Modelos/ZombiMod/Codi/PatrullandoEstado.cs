@@ -6,6 +6,9 @@ public class PatrullandoEstado : StateMachineBehaviour
 {
 
     /* variables */
+
+    [SerializeField] private string ruta = "Ruta2";
+
    [SerializeField]
     private float temporizador;
     [SerializeField]
@@ -24,7 +27,7 @@ public class PatrullandoEstado : StateMachineBehaviour
         agente=animator.GetComponent<UnityEngine.AI.NavMeshAgent>(); //toma el componente del Agente de Navegación de malla
         temporizador= 0; // temporizador
         jugador = GameObject.FindGameObjectWithTag("Player").transform; //  el jugador es el que tiene la etiquta "Player"
-        GameObject go = GameObject.FindGameObjectWithTag("Ruta1"); // Busca a los objetos con etiquta "Puntos de patrullaje"
+        GameObject go = GameObject.FindGameObjectWithTag(ruta); // Busca a los objetos con etiquta "Puntos de patrullaje"
         foreach(Transform t in go.transform)//para cada punto "t" se dirige a la posicion de los mismos.
         { 
             puntosDePatrullaje.Add(t); //addiciona un punto de patrullaje a la lista por cada punto encontrado.

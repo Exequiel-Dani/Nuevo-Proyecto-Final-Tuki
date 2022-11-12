@@ -17,11 +17,21 @@ public class DetectarEnemigo : MonoBehaviour
     //public float speed = 2;
     public EnemyPatrol enemyPatrol;
 
+
+    /////-----
+
+    [SerializeField] private AudioClip sonidoDisparo;
+    AudioSource audioDisp;
+
     private void Start()
     {
         UbicacionInicial = enemigo.GetComponent<Transform>().position;
         RotacionInicial = enemigo.GetComponent<Transform>().rotation;
         enemyPatrol = GetComponent<EnemyPatrol>();
+
+       ///// ----
+
+        audioDisp=GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -67,6 +77,7 @@ public class DetectarEnemigo : MonoBehaviour
 
     private void Disparar()
     {
+        AudioManager.instance.Play("DisparoE");
         GameObject BalaTemporal = Instantiate(BalaPrefab, BalaInicio.transform.position , BalaInicio.transform.rotation);
         Rigidbody rb = BalaTemporal.GetComponent<Rigidbody>();
         rb.AddForce(transform.forward * BalaVelocidad);

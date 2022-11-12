@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class VidaEnemigoZ : MonoBehaviour
 {
     /* Variables */
-    [SerializeField] private int vidaEnemigo=100;
+    [SerializeField] public int vidaEnemigo=100;
     public Animator animator;
 
     public int cantidad;
@@ -25,13 +25,17 @@ public class VidaEnemigoZ : MonoBehaviour
         
         if(vidaEnemigo<=0) //si el enemigo pierde toda la vitalidad
         {
-            
+            AudioManager.instance.Play("Muerte");
             animator.SetTrigger("muerto");//animación de muerte
             GetComponent<Collider>().enabled=false; //desactivación de colisionador
-            AudioManager.instance.Play("Muerte"); //Ejecuta Audio
+            
+            
+
+            
+             //Ejecuta Audio
             
             //Debug.Log("EnemigoDestruido");
-            Destroy(gameObject); 
+            Destroy(gameObject,4); 
         }
         else
         {
