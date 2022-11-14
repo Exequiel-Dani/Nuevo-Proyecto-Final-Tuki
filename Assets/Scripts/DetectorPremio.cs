@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DetectorPremio : MonoBehaviour
 {
@@ -34,7 +35,8 @@ public class DetectorPremio : MonoBehaviour
                 //Premio.transform.SetParent(ubicacionPremio);
                 Premio.GetComponent<PickAbleObject>().isPickAble = false;
                 ganaste.enabled = true;
-                Activo = false;
+                SceneManager.LoadScene(4);
+                //Activo = false;
 
                 //pickUpObject.enabled = false;
             }
